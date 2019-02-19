@@ -1,6 +1,7 @@
 <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-<label>User ID: </label><input type="text" formControlName="login" /><br/>
-<label>Password: </label><input type="password" formControlName="password"/><br/>
-<input type="submit" value="Log In" />
-</form>
-<h1>{{message | async}}</h1>
+    <label>User ID: </label><input type="text" formControlName="login" /><br/>
+    <label>Password: </label><input type="password" formControlName="password" /><br/>
+    <label>Remember Me: </label><input type="checkbox" formControlName="remember" /> <br/>
+    <input type="submit" value="Log In" />
+ </form>
+ <h1>{{message | async}}</h1>
